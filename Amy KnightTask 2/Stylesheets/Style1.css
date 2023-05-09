@@ -1,0 +1,224 @@
+body{
+    background-color: #fcf5b4;
+    position: absolute;
+}
+/* logo banner */
+.logo{
+    border: #e4a4fc;
+    border-spacing: 40px;
+    image-rendering: optimizeQuality;
+    width: 100%;
+    height: 450px;
+    margin-left: 0%;    margin-right: 0%;
+    padding: 0%;
+
+}
+
+  .column {
+    display: flex;
+    width: auto;
+    
+}
+/* headder 1   */
+h1{border-style: solid;
+border-color: #deb4fc;
+background-color:#deb4fc;
+color: rebeccapurple;
+text-align: center;
+margin: 0%;
+}
+/*headder two */
+h2{ color: rebeccapurple;
+  border-bottom: #deb4fc;
+  text-decoration:  underline;
+  border-bottom: rebeccapurple, solid 2px;
+  text-align: center;
+
+}
+/* animation pulsing background */
+.pulser {
+   
+    background:rgb(222,180,252);
+    border-radius: 50%;
+    position:center;
+    display: grid;
+    
+  }
+  
+  .pulser::after {
+    animation: pulse 10000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.4);
+      opacity: 0.4;
+    }
+  }
+  
+  .pulser::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(168, 92, 239);
+    border-radius: 50%;
+    z-index: -1;
+
+  }
+
+
+/* navigation bar */
+
+ul {
+    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+    width: 100%;
+}
+li{
+    float: left;
+    padding: 0%;
+}
+li,a{ 
+    background-color: #e4a4fc;
+    list-style: none ;
+    border: #deb4fc;
+    display: flex;
+    flex-direction: row;
+    color: rebeccapurple;
+    text-decoration: none;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: xx-large;
+    padding-block-end: 10px;
+  
+   
+}
+
+li,a:hover{
+    background-color: #fcf5b4;
+    color:rebeccapurple;
+    text-decoration-style: solid;position: sticky;
+}
+
+/* images of town homepage */
+.town.image{ image-rendering:crisp-edges ;
+    image-rendering: crisp-edges;
+    width: 100%;
+    height: 30em;
+    position: center;
+    margin-top: 5%;
+}
+
+/* portfolio food */
+.content{
+border: #fcf5b4 solid;
+background-color: #fcf5b4;
+grid-row:auto;
+padding: 3px;
+ shape-margin: 20%;
+ margin: 50%
+        
+}
+.row{ 
+  width: 2;
+  height: 50px; 
+  
+
+}
+/*buttons for food portfolio*/
+button
+{
+  background-color: #e4a4fc;
+  color: black;
+}
+button:hover
+{
+  background-color: rebeccapurple;
+  color: aliceblue;
+}
+
+
+.contactforminput[type=text], select, textarea {
+  width: 50%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical ;
+  color: rebeccapurple
+}
+
+
+.contactforminput[type=Submit] {
+  background-color:#e4a4fc;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+
+.contactforminput[type=Submit]:hover {
+  background-color: rebeccapurple;
+  color: whitesmoke ;
+}
+
+
+.contactform.container {
+  border-radius: 5px;
+  background-color: #63198d;
+  padding: 20px;
+  color: rebeccapurple; 
+}
+
+ /* Style for the form */
+.forms{max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* Style for the fieldset */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for the legend */
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for the label */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style for the input fields */
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
