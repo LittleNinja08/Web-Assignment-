@@ -1,5 +1,6 @@
 
-console.log("fjfheuurwruhd")
+
+ 
 
 function mySubmit() {
   alert("Thank you ! we will contact you shortly.")
@@ -13,8 +14,9 @@ form.addEventListener("submit", (event) => {
   // Prevent default form submission behavior
   event.preventDefault();
  // get the attraction chosent 
-  const attraction = attreaction.parse(document.getElementById("attractions").value)
-  // Get the values of the ticket inputs
+  const attraction = attraction.parse(document.getElementById("attractions").value)
+   alert("Thank you ! we will contact you shortly.")
+   // Get the values of the ticket inputs
   const adultTickets = parseInt(document.getElementById("adult").value);
   const childTickets = parseInt(document.getElementById("child").value);
   const seniorTickets = parseInt(document.getElementById("senior").value);
@@ -36,7 +38,7 @@ form.addEventListener("submit", (event) => {
 
   // Display the total cost and personal information in an alert
   alert(`Total Cost for ${attraction}: $${totalCostA}\n\n Hotel:${hotel} \n Number of guests:${totalHotel}\nName: ${name}\nEmail: ${email}\nPhone: ${phone}`);
-  
+ 
   // Reset the form inputs
   form.reset();
 });
